@@ -1,5 +1,11 @@
 require 'rails_helper'
 
+class Post
+  ransacker :custom_searcher do
+    # nothing to see here
+  end
+end
+
 describe ActiveAdmin::Filters::ResourceExtension do
 
   let(:resource) do
